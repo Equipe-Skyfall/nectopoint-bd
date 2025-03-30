@@ -1,0 +1,76 @@
+{
+    "createDatabase": "registros-usuarios",
+    "collections": {
+        "sessao-usuario": {
+            "id_sessao": "string",
+            "id_colaborador": "long",
+            "dados_usuario": {
+            "nome": "string",
+            "cpf": "string",
+            "cargo": "string",
+            "departamento": "string",
+            "status": "string",
+            "ferias_inicio": "date",
+            "ferias_final": "date"
+        },
+            "jornada_trabalho": {
+            "tipo_jornada": "string",
+            "banco_de_horas": "long",
+            "horas_diarias": "int"
+        },
+            "jornada_atual": {},
+            "jornadas_historico": [],
+            "jornadas_irregulares": [],
+            "tickets_usuario": [],
+            "alertas_usuario": []
+        },
+        "turnos": {
+            "id_registro": "string",
+            "id_colaborador": "long",
+            "inicio_turno": "date",
+            "fim_turno": "date",
+            "nome_colaborador": "string",
+            "cpf_colaborador": "string",
+            "status_turno": "string",
+            "tempo_trabalhado_min": "long",
+            "tirou_almoco": "boolean",
+            "pontos_marcados": [],
+            "abono": {},
+            "id_aviso": "string"
+        },
+        "tickets": {
+            "id_ticket": "string",
+            "id_colaborador": "long",
+            "nome_colaborador": "string",
+            "cpf_colaborador": "string",
+            "tipo_ticket": "string",
+            "data_ticket": "date",
+            "status_ticket": "string",
+            "id_gerente": "long",
+            "nome_gerente": "string",
+            "justificativa": "string",
+            "horario_saida": "date",
+            "inicio_intervalo": "date",
+            "fim_intervalo": "date",
+            "data_inicio_ferias": "date",
+            "dias_ferias": "int",
+            "motivo_abono": "string",
+            "dias_abono": [],
+            "abono_inicio": "date",
+            "abono_final": "date",
+            "mensagem": "string",
+            "id_registro": "string",
+            "id_aviso": "string"
+        },
+        "avisos": {
+            "id_aviso": "string",
+            "id_colaborador": "long",
+            "nome_colaborador": "string",
+            "cpf_colaborador": "string",
+            "tipo_aviso": "string",
+            "data_aviso": "date",
+            "status_aviso": "string",
+            "id_ticket": "string"
+        }
+    }
+}  
